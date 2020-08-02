@@ -47,7 +47,7 @@
 }
 /* Set format for main body*/
 
-a {
+ a {
     color: var(--navtext-color);
     text-decoration: none;
     border-bottom: 2px solid var(--navtext-color);
@@ -57,8 +57,11 @@ a {
 /* Set format for paragrpah */
 
 p {
-    font-size: 16px;
+    font-size: 24px;
 }
+
+
+
 
 .subheader{
     height: 320px;
@@ -77,11 +80,12 @@ p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 5px;
 }
+
 .main-section{
     background-color: white;
     color:var(--text-color)
 }
-.aboutme, .worksection, .contactme {
+.aboutme, .worksection, .contactme, .profile {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -94,11 +98,33 @@ p {
     font-size: 3em;
     padding: 0.5em;
     margin-left: 0.8em;
+    display: inline;
 }
-.main-section p{
+
+.profile{
     flex: 4;
-    padding: 2em;
+   padding: 2em;
 }
+
+.profileimg {
+    flex: 1;
+    width: fit-content;
+    display: inline-flex;
+    padding: 2em;
+    
+}
+
+.aboutme p{
+    flex: 4;
+    display: inline-flex;
+    width: 40%;
+    padding-top: 1em;
+}
+
+
+#gtimage { 
+    width: 100%;
+    }
 .websiteimageswrapper{
     flex: 4;
     padding: 2em; 
@@ -106,37 +132,55 @@ p {
 }
 .websitegrid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 10px;
     font-size: 16px;
-    align-items: flex-start;
+    align-items: stretch;
     justify-content: center;
    
 }
 .website1{
   
-   grid-column: 1 / span 1;
+   grid-column: 1 / span 2;
+   grid-row: 1 / span 2;
     border: solid  var(--navtext-color);
     position: relative;
-    max-width: fit-content;
 }
     
 .website2{
  
-    grid-column: 2 / span 1;
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
     border: solid   var(--navtext-color);
     position: relative;
-    max-width: fit-content;
+    
 }
 .website3{
  
-    grid-column: 1 / span 1;
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
     border: solid   var(--navtext-color);
     position: relative;
-    max-width: fit-content;
+ 
 }
 
-
+.website4{
+ 
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+    border: solid   var(--navtext-color);
+    position: relative;
+   
+}
+.website5{
+ 
+    grid-column: 2 / span 1;
+    grid-row: 3/ span 1;
+    border: solid   var(--navtext-color);
+    position: relative;
+  
+}
 .websiteimage{
     /* define the image attributes of website icons*/
     opacity: 0.5;   
@@ -144,6 +188,14 @@ p {
     object-fit: cover;
     
 }
+
+#website1img {
+    width: 180%;
+}
+#website2img, #website3img, #website4img, #website5img {
+    width: 141%;
+}
+
 
 /*
 .websiteimage::after {
@@ -158,6 +210,7 @@ p {
     opacity: 1;
     transition: 1s;
   }
+  
   
 
 .description{
@@ -192,7 +245,7 @@ body {
     padding: 2em;
     display: inline-flex;
 }
-.contactinfo .tel, .contactinfo .email, .contactinfo .linkedin{
+.contactinfo .tel, .contactinfo .email, .contactinfo .linkedin, .contactinfo .twitter {
     flex: 1;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: inline-flex;
