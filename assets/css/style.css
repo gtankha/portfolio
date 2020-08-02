@@ -2,12 +2,13 @@
 /* Set format for header */
 :root {
     --navtext-color: rgb(145, 214, 216);
+    --text-color: rgb(92, 92, 92);
     
   }
 .header {
     padding: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: rgb(54, 47, 47);
+    background-color: var(--text-color);
     color: var(--navtext-color);
     height: 35px;
 
@@ -16,7 +17,7 @@
     display: initial;
     font-size: 25 px;
     background-color: rgb(136, 170, 175);
-    color: black;
+    color:  var(--text-color);
     margin: (0,-2rem);
     position: absolute;
     left: 7px;
@@ -66,7 +67,8 @@ p {
 .subheader h2{
     display: block;
     background-color: rgb(136, 170, 175);
-    color: black;
+    color: var(--text-color);
+    width: fit-content;
     position: relative;
     left: 80%;
     top: 80%;
@@ -75,7 +77,133 @@ p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 5px;
 }
+.main-section{
+    background-color: white;
+    color:var(--text-color)
+}
+.aboutme, .worksection, .contactme {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.main-section h2{
+    flex: 1;
+    text-align: right;
+    border-right: solid var(--text-color);
+    font-size: 3em;
+    padding: 0.5em;
+    margin-left: 0.8em;
+}
+.main-section p{
+    flex: 4;
+    padding: 2em;
+}
+.websiteimageswrapper{
+    flex: 4;
+    padding: 2em; 
+
+}
+.websitegrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    font-size: 16px;
+    align-items: flex-start;
+    justify-content: center;
+   
+}
+.website1{
+  
+   grid-column: 1 / span 1;
+    border: solid  var(--navtext-color);
+    position: relative;
+    max-width: fit-content;
+}
+    
+.website2{
+ 
+    grid-column: 2 / span 1;
+    border: solid   var(--navtext-color);
+    position: relative;
+    max-width: fit-content;
+}
+.website3{
+ 
+    grid-column: 1 / span 1;
+    border: solid   var(--navtext-color);
+    position: relative;
+    max-width: fit-content;
+}
+
+
+.websiteimage{
+    /* define the image attributes of website icons*/
+    opacity: 0.5;   
+    display: inline-block;
+    object-fit: cover;
+    
+}
+
+/*
+.websiteimage::after {
+    content: "";
+    opacity: 1;
+    transition: all 1s ease-in;
+    opacity: 0;
+  }
+  */
+
+  .websiteimage:hover {
+    opacity: 1;
+    transition: 1s;
+  }
+  
+
+.description{
+    display: block;
+    background-color: rgb(136, 170, 175);
+    color: var(--text-color);
+    width: fit-content;
+    position: absolute;
+    opacity: 1;
+    top: 55%;
+    left: 0%;
+}
+.description h4{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 9px;
+    line-height: 0.5em;
+    padding: 0px 3px 0px 3px;
+}
+.description h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 0.5em;
+    padding: 0px 3px 0px 3px;
+}
+
 
 body {
     background-color: #d9dcd6;
+}
+.contactinfo{
+    flex: 4;
+    padding: 2em;
+    display: inline-flex;
+}
+.contactinfo .tel, .contactinfo .email, .contactinfo .linkedin{
+    flex: 1;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: inline-flex;
+    justify-content: center;
+    width: fit-content; 
+    align-items: center;
+    color: var(--navtext-color);
+    text-decoration: none;
+    font-size: 16px; 
+}
+.contactinfo span, .contactinfo a {
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--navtext-color);
 }
