@@ -85,11 +85,32 @@ p {
     background-color: white;
     color:var(--text-color)
 }
-.aboutme, .worksection, .contactme, .profile {
+
+.aboutme {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+
+.worksection {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.contactme {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.profile{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
+}
+
+
+
 
 .main-section h2{
     flex: 1;
@@ -197,14 +218,6 @@ p {
 }
 
 
-/*
-.websiteimage::after {
-    content: "";
-    opacity: 1;
-    transition: all 1s ease-in;
-    opacity: 0;
-  }
-  */
 
   .websiteimage:hover {
     opacity: 1;
@@ -260,3 +273,179 @@ body {
     padding-bottom: 0.5rem;
     border-bottom: 2px solid var(--navtext-color);
 }
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+
+.header {
+
+    justify-content: center;
+}
+
+.subheader h2{
+    left: 70%;
+}
+
+.aboutme, .worksection, .contactme, .profile{
+width: 100%;
+}
+.main-section h2{
+font-size: 2em;
+}
+.aboutme p{
+    font-size: 13px;
+}
+
+#website1img, #website2img, #website3img, #website4img, #website5img {
+width: 90%;
+}
+footer p{
+    font-size: 10px;
+}
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+
+.header h1 span{
+    margin-left: 10px;
+    top: 2px;
+    font-size: 20px;
+}
+.header nav{
+    margin-right: 0px;
+    margin-left: 14em;
+    float: none;
+
+}
+.header nav ul {
+    font-size: 0.7em;
+}
+.header nav ul li {
+    margin-left: 15px;
+}
+.aboutme, .worksection, .contactme, .profile{
+    width: 100%;
+    }
+
+.subheader h2 {
+    left: 60%;
+}
+
+.main-section h2{
+    font-size: 1.1em;
+    margin-left: 0px;
+}
+.profile{
+    padding-left: 0.1em;
+}
+.profileimg{
+    padding-left: .2em;
+}
+#gtimage {
+    width: 130%;
+}
+#website1img, #website2img, #website3img, #website4img, #website5img {
+    width: 100%
+}
+.description {
+    top: 55%
+}
+.description h3 {
+    font-size: 8px;
+    line-height: 0.1em;
+
+}
+.description h4 {
+    font-size: 7px;
+    line-height: 0.1em;
+}
+.contactinfo .tel, .contactinfo .email, .contactinfo .linkedin, .contactinfo .twitter {
+    font-size: 0.7em;
+}
+footer p {
+    font-size: 10px;
+}
+}
+
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+
+
+.header nav{
+margin-left: 4em;
+width: 50%;
+    }
+
+.header nav ul{
+    font-size: 0.6em;
+    display: flex;
+}
+.header h1 span{
+    font-size: 0.6em;
+}
+
+a {
+    border-bottom: 1px solid var(--navtext-color);
+    padding-bottom: 0.1rem;
+}
+.subheader h2 {
+    left: 50%;
+}
+.subheader h2 span{
+    font-size: 0.8em;
+}
+.aboutme, .worksection, .contactme {
+    flex-direction: column;
+}
+.main-section h2, .worksection h2{
+    width: 50%;
+    border-right: none;
+}
+
+.contactme h2{
+    width: 58%;
+    border-right: none;
+}
+
+.main-section h2 span, .worksection h2 span, .contactme h2 span{
+    border-bottom: 2px solid var(--navtext-color);
+}
+.profile{
+    padding: 0px;
+
+}
+.aboutme p{
+    flex: 2;
+    padding-left: 1em;
+    border-left: solid var(--navtext-color);
+}
+.description h3{
+    font-size: 6px;
+
+}
+.description h4{
+    font-size: 5px;
+}
+.contactinfo {
+    padding:0;
+    padding-left: 2.5em;
+
+}
+.contactme h2{
+    padding-bottom: 0px;
+}
+.contactinfo .tel, .contactinfo .email, .contactinfo .linkedin, .contactinfo .twitter {
+    font-size: 0.2em;
+    padding-right: 2em;
+}
+.contactinfo span, .contactinfo a{
+    padding-bottom: 0.2em;
+    border-bottom: 1px solid var(--navtext-color);
+}
+footer p{
+    font-size: 7px;
+}
+} 
+
