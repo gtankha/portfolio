@@ -1,10 +1,12 @@
 
-/* Set format for header */
+/* Set variables that will be used frequently */
 :root {
     --navtext-color: rgb(145, 214, 216);
     --text-color: rgb(92, 92, 92);
     
   }
+
+ /* Set format for header */
 .header {
     padding: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -27,7 +29,7 @@
     margin-left: 45px;
     margin-right: 5px;
 }
-/* Set format for header div */
+/* Set format for navigation bar*/
 .header nav {
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -35,7 +37,6 @@
     margin-right: 80px;
 }
 
-/* Set format for list in header */
 .header nav ul {
     list-style-type: none;
     display: initial;
@@ -54,14 +55,12 @@
     padding-bottom: 0.5rem;
 }
 
-/* Set format for paragrpah */
-
 p {
     font-size: 24px;
 }
 
 
-
+/* set properties for image and title below the header */
 
 .subheader{
     height: 320px;
@@ -81,6 +80,7 @@ p {
     margin: 5px;
 }
 
+/* set format for main section including aboutme, work and contactme */
 .main-section{
     background-color: white;
     color:var(--text-color)
@@ -103,15 +103,17 @@ p {
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+
+/* set properties for parent of profile image */
 .profile{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap; 
+    flex: 4;
+   padding: 2em;
 }
 
-
-
-
+/* set properties for main section headers */
 .main-section h2{
     flex: 1;
     text-align: right;
@@ -122,11 +124,7 @@ p {
     display: inline;
 }
 
-.profile{
-    flex: 4;
-   padding: 2em;
-}
-
+/* set properties for profile image */
 .profileimg {
     flex: 1;
     width: fit-content;
@@ -134,7 +132,11 @@ p {
     padding: 2em;
     
 }
+#gtimage { 
+    width: 100%;
+    }
 
+/* set properties for about me */
 .aboutme p{
     flex: 4;
     display: inline-flex;
@@ -142,10 +144,8 @@ p {
     padding-top: 1em;
 }
 
+/* define grif and flex properties in the work section */
 
-#gtimage { 
-    width: 100%;
-    }
 .websiteimageswrapper{
     flex: 4;
     padding: 2em; 
@@ -210,6 +210,7 @@ p {
     
 }
 
+/* define website icon properties */
 #website1img {
     width: 180%;
 }
@@ -218,13 +219,15 @@ p {
 }
 
 
+/* properties when hovering */
 
   .websiteimage:hover {
     opacity: 1;
     transition: 1s;
   }
   
-  
+ 
+  /* format for website icon description */
 
 .description{
     display: block;
@@ -249,10 +252,12 @@ p {
     padding: 0px 3px 0px 3px;
 }
 
-
+/* white body backgroun */
 body {
     background-color: #d9dcd6;
 }
+
+/* contact info section format */
 .contactinfo{
     flex: 4;
     padding: 2em;
@@ -448,4 +453,3 @@ footer p{
     font-size: 7px;
 }
 } 
-
