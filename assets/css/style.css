@@ -64,7 +64,7 @@ p {
 
 .subheader{
     height: 320px;
-    background-image: url("../images/subheader.jpg");
+    background-image: url("./subheader.jpg");
 }
 .subheader h2{
     display: block;
