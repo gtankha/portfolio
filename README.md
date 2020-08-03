@@ -9,5 +9,5 @@
 # 3. Main section consisting of an about me, work and contact info section
 # 4. Footer section with copyright
 
-# Access: Website URL: https://gtankha.github.io/Portfolio/
+# Access: Website URL: https://gtankha.github.io/portfolio/
 
