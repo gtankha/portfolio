@@ -64,7 +64,7 @@ p {
 
 .subheader{
     height: 320px;
-    background-image: url("./subheader.jpg");
+    background-image: url("../images/subheader.jpg");
 }
 .subheader h2{
     display: block;
@@ -213,7 +213,7 @@ p {
 
 /* define website icon properties */
 #website1img {
-    width: 120%;
+    width: 100%;
     border: solid   var(--navtext-color);
 }
 #website2img, #website3img, #website4img, #website5img {
@@ -284,16 +284,6 @@ body {
 }
 
 
-/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-@media screen and (max-width: 1300px) {
-
-    #website1img {
-        width: 107%;
-    }
-    #website2img, #website3img, #website4img, #website5img {
-        width: 102%;
-    }
-}
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
 
